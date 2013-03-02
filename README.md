@@ -1,4 +1,4 @@
-IDE-labs
-========
-
-Laboratory works for the Integrated Development Environment course
+IDE Course Laboratory Works
+===========================
+###### (Integrated Development Environment Course)
+#####  student gr. FAF-111 Roman Roibu
