@@ -12,7 +12,7 @@ Part 1: Setting server environment. Version Control.
 
 This part of the laboratory work is presented in a screencast. 
 
-[![Screencast](https://raw.github.com/TheRedGuy/IDE-labs/master/lab%231/video.png)](https://vimeo.com/61480176)
+[![Screencast](https://raw.github.com/TheRedGuy/IDE-labs/master/lab%231/movie.png)](https://vimeo.com/61480176)
 
 Although I didn't provide any commentary in the video, I think everything is clear, and self-explanatory. 
 I will only highlight the commands I used to complete the required tasks. 
