@@ -27,7 +27,7 @@ I will only highlight the commands I used to complete the required tasks.
 - Checkout into a branch:         `git checkout [branch name]`
 - Merge a brange into current:    `git merge [branch name]`
 - Add a remote:                   `git remote add [remote name] [remote repo]`
-- Set a branch to track a remote: `git branch --track [remote repo/branch] [local branch]
+- Set a branch to track a remote: `git branch --track [remote repo/branch] [local branch]`
 - Reset to previous commit:       `git reset [mode] [commit]`
 
 Part 2: Command Line Interface (CLI). Scripting.
