@@ -1,0 +1,359 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E035177616FE500E00F28585 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E035177516FE500E00F28585 /* Cocoa.framework */; };
+		E035177F16FE500E00F28585 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E035177D16FE500E00F28585 /* InfoPlist.strings */; };
+		E035178116FE500E00F28585 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E035178016FE500E00F28585 /* main.m */; };
+		E035178616FE500E00F28585 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E035178416FE500E00F28585 /* MainMenu.xib */; };
+		E035178916FE500E00F28585 /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = E035178816FE500E00F28585 /* rb_main.rb */; };
+		E035178B16FE500E00F28585 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = E035178A16FE500E00F28585 /* AppDelegate.rb */; };
+		E0595DA616FE84E800E28718 /* calculator.rb in Resources */ = {isa = PBXBuildFile; fileRef = E0595DA516FE84E800E28718 /* calculator.rb */; };
+		E0A8EB53171EDD5100156DDB /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = E0A8EB52171EDD5100156DDB /* Icon.icns */; };
+		E0C29EFB171DCFF200294AAE /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0C29EFA171DCFF200294AAE /* MacRuby.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E035177116FE500E00F28585 /* Rubulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rubulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E035177516FE500E00F28585 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E035177C16FE500E00F28585 /* Rubulator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Rubulator-Info.plist"; sourceTree = "<group>"; };
+		E035177E16FE500E00F28585 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E035178016FE500E00F28585 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E035178216FE500E00F28585 /* Rubulator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rubulator-Prefix.pch"; sourceTree = "<group>"; };
+		E035178516FE500E00F28585 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E035178816FE500E00F28585 /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		E035178A16FE500E00F28585 /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		E0595DA516FE84E800E28718 /* calculator.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = calculator.rb; sourceTree = "<group>"; };
+		E0A8EB52171EDD5100156DDB /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
+		E0C29EFA171DCFF200294AAE /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = /Library/Frameworks/MacRuby.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E035176E16FE500E00F28585 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0C29EFB171DCFF200294AAE /* MacRuby.framework in Frameworks */,
+				E035177616FE500E00F28585 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E035176616FE500E00F28585 = {
+			isa = PBXGroup;
+			children = (
+				E0A8EB52171EDD5100156DDB /* Icon.icns */,
+				E035177A16FE500E00F28585 /* Rubulator */,
+				E035177416FE500E00F28585 /* Frameworks */,
+				E035177216FE500E00F28585 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E035177216FE500E00F28585 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E035177116FE500E00F28585 /* Rubulator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E035177416FE500E00F28585 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0C29EFA171DCFF200294AAE /* MacRuby.framework */,
+				E035177516FE500E00F28585 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E035177A16FE500E00F28585 /* Rubulator */ = {
+			isa = PBXGroup;
+			children = (
+				E035178A16FE500E00F28585 /* AppDelegate.rb */,
+				E0595DA516FE84E800E28718 /* calculator.rb */,
+				E035178316FE500E00F28585 /* Resources */,
+				E035178716FE500E00F28585 /* Other Sources */,
+				E035177B16FE500E00F28585 /* Supporting Files */,
+			);
+			path = Rubulator;
+			sourceTree = "<group>";
+		};
+		E035177B16FE500E00F28585 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E035177C16FE500E00F28585 /* Rubulator-Info.plist */,
+				E035177D16FE500E00F28585 /* InfoPlist.strings */,
+				E035178016FE500E00F28585 /* main.m */,
+				E035178216FE500E00F28585 /* Rubulator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E035178316FE500E00F28585 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E035178416FE500E00F28585 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E035178716FE500E00F28585 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E035178816FE500E00F28585 /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		E035177916FE500E00F28585 /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = E035179116FE500E00F28585 /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		E035177016FE500E00F28585 /* Rubulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E035178E16FE500E00F28585 /* Build configuration list for PBXNativeTarget "Rubulator" */;
+			buildPhases = (
+				E035176D16FE500E00F28585 /* Sources */,
+				E035176E16FE500E00F28585 /* Frameworks */,
+				E035176F16FE500E00F28585 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rubulator;
+			productName = Rubulator;
+			productReference = E035177116FE500E00F28585 /* Rubulator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E035176816FE500E00F28585 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Roman Roibu";
+			};
+			buildConfigurationList = E035176B16FE500E00F28585 /* Build configuration list for PBXProject "Rubulator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E035176616FE500E00F28585;
+			productRefGroup = E035177216FE500E00F28585 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E035177016FE500E00F28585 /* Rubulator */,
+				E035177916FE500E00F28585 /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E035176F16FE500E00F28585 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E035177F16FE500E00F28585 /* InfoPlist.strings in Resources */,
+				E035178616FE500E00F28585 /* MainMenu.xib in Resources */,
+				E035178916FE500E00F28585 /* rb_main.rb in Resources */,
+				E035178B16FE500E00F28585 /* AppDelegate.rb in Resources */,
+				E0595DA616FE84E800E28718 /* calculator.rb in Resources */,
+				E0A8EB53171EDD5100156DDB /* Icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E035176D16FE500E00F28585 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E035178116FE500E00F28585 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E035177D16FE500E00F28585 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E035177E16FE500E00F28585 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E035178416FE500E00F28585 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E035178516FE500E00F28585 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E035178C16FE500E00F28585 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E035178D16FE500E00F28585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E035178F16FE500E00F28585 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rubulator/Rubulator-Prefix.pch";
+				INFOPLIST_FILE = "Rubulator/Rubulator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E035179016FE500E00F28585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Rubulator/Rubulator-Prefix.pch";
+				INFOPLIST_FILE = "Rubulator/Rubulator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E035179216FE500E00F28585 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Debug;
+		};
+		E035179316FE500E00F28585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E035176B16FE500E00F28585 /* Build configuration list for PBXProject "Rubulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E035178C16FE500E00F28585 /* Debug */,
+				E035178D16FE500E00F28585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E035178E16FE500E00F28585 /* Build configuration list for PBXNativeTarget "Rubulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E035178F16FE500E00F28585 /* Debug */,
+				E035179016FE500E00F28585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E035179116FE500E00F28585 /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E035179216FE500E00F28585 /* Debug */,
+				E035179316FE500E00F28585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E035176816FE500E00F28585 /* Project object */;
+}
