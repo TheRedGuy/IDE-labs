@@ -21,11 +21,11 @@ Rubulator
 
 The program is a single view application.
 
-![Main Window](https://raw.github.com/TheRedGuy/IDE-labs/master/lab%232/screens/main%20screen.png)
+![Main Window](https://raw.github.com/TheRedGuy/IDE-labs/master/lab%232/screens/main_screen.png)
 
 It also has a simple About dialog.
 
-![About Pop-up](https://raw.github.com/TheRedGuy/IDE-labs/master/lab%232/screens/about%20screen.png)
+![About Pop-up](https://raw.github.com/TheRedGuy/IDE-labs/master/lab%232/screens/about_screen.png)
 
 Conclusion
 ----------

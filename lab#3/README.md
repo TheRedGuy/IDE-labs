@@ -18,8 +18,8 @@ Pomodoro iOS App
 
 This iOS application is a tool that helps embrace the [Pomodoro technique](http://www.pomodorotechnique.com/). 
 
-![Main View](https://raw.github.com/TheRedGuy/IDE-labs/master/lab%233/screens/main%20view.png)
-![Sidebar View](https://raw.github.com/TheRedGuy/IDE-labs/master/lab%233/screens/sidebar%20view.png)
+![Main View](https://raw.github.com/TheRedGuy/IDE-labs/master/lab%233/screens/main_view.png)
+![Sidebar View](https://raw.github.com/TheRedGuy/IDE-labs/master/lab%233/screens/sidebar_view.png)
 
 Conclusion
 ----------
