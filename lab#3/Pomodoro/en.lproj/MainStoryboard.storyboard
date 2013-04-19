@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="wfL-cP-BWa">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="rJd-K4-CAT">
+            <objects>
+                <viewController id="wfL-cP-BWa" customClass="PDViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ifb-Lu-tT2">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fnW-FY-8wa" userLabel="sideNav">
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="15" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="Qok-Sz-2fC" userLabel="Pomodoro Slider">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="206" id="obc-CU-bXZ"/>
+                                        </constraints>
+                                        <color key="minimumTrackTintColor" red="0.81463249360000001" green="0.22121024" blue="0.28522887209999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="maximumTrackTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="thumbTintColor" red="0.023018973214285698" green="0.00093101966764355616" blue="0.0023048588952106742" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="doPomodoroSliderButtonUp:" destination="wfL-cP-BWa" eventType="touchUpInside" id="6EH-Ve-Gvs"/>
+                                            <action selector="doPomodoroSliderValueChanged:" destination="wfL-cP-BWa" eventType="valueChanged" id="KNa-3r-xOg"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="25" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwN-Zo-hWR" userLabel="Pomodoro Settings Label">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="49" id="dIQ-AJ-sVp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="4" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXV-JX-xuL" userLabel="Interval Settings Label">
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbF-cl-2gI">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="4zn-wD-bMG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="25"/>
+                                        <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pomodoro" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvk-lC-aeK">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="Qmd-52-mQ4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Long Break Interval" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9VE-nK-n0X">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="eit-Jc-V6q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="4" minValue="2" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="hq7-jz-h6G" userLabel="Interval Slider">
+                                        <color key="minimumTrackTintColor" red="0.81463249360000001" green="0.22121024" blue="0.28522887209999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="maximumTrackTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="thumbTintColor" red="0.023018973210000002" green="0.00093101966759999997" blue="0.0023048588949999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="doIntervalSliderValueChanged:" destination="wfL-cP-BWa" eventType="valueChanged" id="zY6-Is-0cd"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="© Roman Roibu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OrE-iB-Auq">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="16C-Pb-FF2"/>
+                                            <constraint firstAttribute="height" constant="21" id="d4U-nD-0fX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="RXV-JX-xuL" firstAttribute="leading" secondItem="LwN-Zo-hWR" secondAttribute="leading" type="default" id="0Lk-Pn-UHy"/>
+                                    <constraint firstItem="9VE-nK-n0X" firstAttribute="top" secondItem="fnW-FY-8wa" secondAttribute="top" constant="170" id="2XG-cR-3jt"/>
+                                    <constraint firstAttribute="bottom" secondItem="OrE-iB-Auq" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="3T4-qH-krg"/>
+                                    <constraint firstItem="Qok-Sz-2fC" firstAttribute="top" secondItem="fnW-FY-8wa" secondAttribute="top" constant="130" id="Dkq-M9-ScW"/>
+                                    <constraint firstItem="hq7-jz-h6G" firstAttribute="trailing" secondItem="RXV-JX-xuL" secondAttribute="trailing" type="default" id="ImQ-fR-wXU"/>
+                                    <constraint firstItem="NbF-cl-2gI" firstAttribute="centerX" secondItem="Qok-Sz-2fC" secondAttribute="centerX" type="default" id="KMj-DI-qLO"/>
+                                    <constraint firstItem="RXV-JX-xuL" firstAttribute="trailing" secondItem="Qok-Sz-2fC" secondAttribute="trailing" type="default" id="MGs-cI-5GO"/>
+                                    <constraint firstItem="mvk-lC-aeK" firstAttribute="top" secondItem="fnW-FY-8wa" secondAttribute="top" constant="105" id="MfB-ma-6Y7"/>
+                                    <constraint firstItem="hq7-jz-h6G" firstAttribute="leading" secondItem="9VE-nK-n0X" secondAttribute="leading" type="default" id="P1M-ji-kv9"/>
+                                    <constraint firstAttribute="trailing" secondItem="NbF-cl-2gI" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="R4a-Hq-rXT"/>
+                                    <constraint firstItem="9VE-nK-n0X" firstAttribute="trailing" secondItem="mvk-lC-aeK" secondAttribute="trailing" type="default" id="UuY-dI-bAP"/>
+                                    <constraint firstItem="mvk-lC-aeK" firstAttribute="leading" secondItem="Qok-Sz-2fC" secondAttribute="leading" type="default" id="Xkl-K0-IEd"/>
+                                    <constraint firstItem="hq7-jz-h6G" firstAttribute="top" secondItem="fnW-FY-8wa" secondAttribute="top" constant="195" id="ZcN-jS-rsb"/>
+                                    <constraint firstItem="NbF-cl-2gI" firstAttribute="leading" secondItem="fnW-FY-8wa" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="a5P-06-yqX"/>
+                                    <constraint firstItem="LwN-Zo-hWR" firstAttribute="baseline" secondItem="mvk-lC-aeK" secondAttribute="baseline" type="default" id="ebR-d8-KxZ"/>
+                                    <constraint firstItem="OrE-iB-Auq" firstAttribute="centerX" secondItem="hq7-jz-h6G" secondAttribute="centerX" type="default" id="hII-Rh-8Aa"/>
+                                    <constraint firstItem="RXV-JX-xuL" firstAttribute="top" secondItem="9VE-nK-n0X" secondAttribute="top" type="default" id="hTS-zA-GBx"/>
+                                    <constraint firstItem="NbF-cl-2gI" firstAttribute="top" secondItem="fnW-FY-8wa" secondAttribute="top" constant="20" symbolic="YES" type="default" id="jYd-6V-XAw"/>
+                                    <constraint firstItem="LwN-Zo-hWR" firstAttribute="top" secondItem="mvk-lC-aeK" secondAttribute="top" type="default" id="jvy-Px-ROr"/>
+                                    <constraint firstItem="RXV-JX-xuL" firstAttribute="baseline" secondItem="9VE-nK-n0X" secondAttribute="baseline" type="default" id="q8f-WE-fRF"/>
+                                    <constraint firstItem="LwN-Zo-hWR" firstAttribute="trailing" secondItem="Qok-Sz-2fC" secondAttribute="trailing" type="default" id="s3B-Ah-XX3"/>
+                                    <constraint firstItem="9VE-nK-n0X" firstAttribute="leading" secondItem="Qok-Sz-2fC" secondAttribute="leading" type="default" id="y1P-91-KoT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3BA-DT-fPH" userLabel="mainView">
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAt-wJ-vmx">
+                                        <color key="tintColor" red="0.81463249360000001" green="0.22121024" blue="0.28522887209999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <items>
+                                            <navigationItem title="Pomodoro" id="D0r-uM-QKs">
+                                                <barButtonItem key="leftBarButtonItem" image="config.png" id="QfW-TE-WIH">
+                                                    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <connections>
+                                                        <action selector="settingsTapped:" destination="wfL-cP-BWa" id="whe-Zp-tUM"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="clockface.png" translatesAutoresizingMaskIntoConstraints="NO" id="cEb-Zg-69d"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="clockface.png" translatesAutoresizingMaskIntoConstraints="NO" id="7DB-8G-aBG"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" text="2 5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01Z-Rs-jgL">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="104" id="Pyt-0B-avU"/>
+                                            <constraint firstAttribute="height" constant="65" id="j3n-pT-d1v"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="80"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" text="0 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXx-XH-LV6">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="104" id="vyz-Z5-RQ9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="80"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" alpha="0.79999999999999993" contentMode="scaleToFill" image="info_list.png" translatesAutoresizingMaskIntoConstraints="NO" id="cv7-9F-VgD">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="yVx-O6-exm"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOh-Gb-ePN">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="yDq-vK-TXr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="35"/>
+                                        <state key="normal" title="START" backgroundImage="start_btn.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="doStartPomodoro:" destination="wfL-cP-BWa" eventType="touchUpInside" id="CmK-MU-DLF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtU-f7-8Og">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="OCr-xB-fut"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="35"/>
+                                        <state key="normal" title="STOP" backgroundImage="stop_btn.png">
+                                            <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="doStopPomodoro:" destination="wfL-cP-BWa" eventType="touchUpInside" id="2hU-OY-wu3"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Next Break Type:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZS-vf-jVG">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="158" id="RT1-j5-4oP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pomodoros Completed:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLC-Tb-qcd">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="179" id="8Bh-ns-IJJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Short" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stS-PB-roN" userLabel="Break Type Label">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="72" id="wpk-ox-c9W"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAs-Nv-xWf" userLabel="Pomodoros Complete Label">
+                                        <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="GLC-Tb-qcd" firstAttribute="leading" secondItem="CZS-vf-jVG" secondAttribute="leading" type="default" id="0Xo-bb-CjQ"/>
+                                    <constraint firstItem="01Z-Rs-jgL" firstAttribute="centerX" secondItem="cEb-Zg-69d" secondAttribute="centerX" type="default" id="0fq-9J-XK8"/>
+                                    <constraint firstItem="XOh-Gb-ePN" firstAttribute="leading" secondItem="3BA-DT-fPH" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="0nP-NF-X2B"/>
+                                    <constraint firstItem="stS-PB-roN" firstAttribute="trailing" secondItem="XXx-XH-LV6" secondAttribute="trailing" type="default" id="4c0-Cc-Cmo"/>
+                                    <constraint firstItem="XOh-Gb-ePN" firstAttribute="top" secondItem="3BA-DT-fPH" secondAttribute="top" constant="180" id="75G-Sw-9bZ"/>
+                                    <constraint firstItem="KAs-Nv-xWf" firstAttribute="trailing" secondItem="stS-PB-roN" secondAttribute="trailing" type="default" id="8jA-mA-BXg"/>
+                                    <constraint firstItem="XXx-XH-LV6" firstAttribute="centerX" secondItem="7DB-8G-aBG" secondAttribute="centerX" type="default" id="BdQ-Kf-n24"/>
+                                    <constraint firstAttribute="trailing" secondItem="gtU-f7-8Og" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="D6m-Db-M1i"/>
+                                    <constraint firstItem="KAs-Nv-xWf" firstAttribute="leading" secondItem="stS-PB-roN" secondAttribute="leading" type="default" id="Fnb-B0-Vn3"/>
+                                    <constraint firstItem="cv7-9F-VgD" firstAttribute="leading" secondItem="3BA-DT-fPH" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="IXh-Bi-vxU"/>
+                                    <constraint firstItem="AAt-wJ-vmx" firstAttribute="top" secondItem="3BA-DT-fPH" secondAttribute="top" type="default" id="K5C-gm-dfz"/>
+                                    <constraint firstItem="CZS-vf-jVG" firstAttribute="baseline" secondItem="stS-PB-roN" secondAttribute="baseline" type="default" id="KHh-ro-SZZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="cv7-9F-VgD" secondAttribute="bottom" constant="40" id="KPD-ST-QGW"/>
+                                    <constraint firstItem="7DB-8G-aBG" firstAttribute="top" secondItem="cEb-Zg-69d" secondAttribute="top" type="default" id="Odv-40-RtK"/>
+                                    <constraint firstAttribute="trailing" secondItem="XOh-Gb-ePN" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="PK9-qD-v9R"/>
+                                    <constraint firstAttribute="bottom" secondItem="gtU-f7-8Og" secondAttribute="bottom" constant="145" id="R2c-gi-eHk"/>
+                                    <constraint firstAttribute="bottom" secondItem="CZS-vf-jVG" secondAttribute="bottom" constant="85" id="ROw-R6-nyJ"/>
+                                    <constraint firstItem="cEb-Zg-69d" firstAttribute="leading" secondItem="3BA-DT-fPH" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Rq8-yb-0sY"/>
+                                    <constraint firstAttribute="trailing" secondItem="7DB-8G-aBG" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="V2c-5J-7AJ"/>
+                                    <constraint firstItem="KAs-Nv-xWf" firstAttribute="baseline" secondItem="GLC-Tb-qcd" secondAttribute="baseline" type="default" id="YiK-7M-H6y"/>
+                                    <constraint firstItem="AAt-wJ-vmx" firstAttribute="trailing" secondItem="3BA-DT-fPH" secondAttribute="trailing" type="default" id="b4Z-29-qIs"/>
+                                    <constraint firstAttribute="trailing" secondItem="cv7-9F-VgD" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="g1j-CA-dWT"/>
+                                    <constraint firstItem="cEb-Zg-69d" firstAttribute="top" secondItem="3BA-DT-fPH" secondAttribute="top" constant="60" id="kaC-ZS-nPn"/>
+                                    <constraint firstItem="AAt-wJ-vmx" firstAttribute="leading" secondItem="3BA-DT-fPH" secondAttribute="leading" type="default" id="lBD-4y-p3g"/>
+                                    <constraint firstItem="gtU-f7-8Og" firstAttribute="leading" secondItem="3BA-DT-fPH" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="qSd-oV-3zp"/>
+                                    <constraint firstItem="CZS-vf-jVG" firstAttribute="leading" secondItem="01Z-Rs-jgL" secondAttribute="leading" type="default" id="sBJ-RP-2LZ"/>
+                                    <constraint firstItem="01Z-Rs-jgL" firstAttribute="top" secondItem="3BA-DT-fPH" secondAttribute="top" constant="75" id="ua8-Kt-XJ0"/>
+                                    <constraint firstAttribute="bottom" secondItem="GLC-Tb-qcd" secondAttribute="bottom" constant="50" id="yAl-V7-poI"/>
+                                    <constraint firstItem="XXx-XH-LV6" firstAttribute="baseline" secondItem="01Z-Rs-jgL" secondAttribute="baseline" type="default" id="z6e-SM-5de"/>
+                                    <constraint firstItem="XXx-XH-LV6" firstAttribute="top" secondItem="01Z-Rs-jgL" secondAttribute="top" type="default" id="zSZ-cN-2Ef"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bhQ-wg-caz" appends="YES" id="Soj-QS-bad"/>
+                                    <outletCollection property="gestureRecognizers" destination="IbV-4g-L9b" appends="YES" id="zbc-hD-2cR"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3BA-DT-fPH" firstAttribute="top" secondItem="ifb-Lu-tT2" secondAttribute="top" type="default" id="4NJ-Jm-f2a"/>
+                            <constraint firstItem="fnW-FY-8wa" firstAttribute="bottom" secondItem="ifb-Lu-tT2" secondAttribute="bottom" type="default" id="8uD-Ee-JwG"/>
+                            <constraint firstAttribute="trailing" secondItem="fnW-FY-8wa" secondAttribute="trailing" constant="70" id="9oJ-qL-37N"/>
+                            <constraint firstItem="3BA-DT-fPH" firstAttribute="leading" secondItem="ifb-Lu-tT2" secondAttribute="leading" type="default" id="LPz-OW-HXT"/>
+                            <constraint firstItem="fnW-FY-8wa" firstAttribute="top" secondItem="ifb-Lu-tT2" secondAttribute="top" type="default" id="Yjg-Ft-PPh"/>
+                            <constraint firstItem="fnW-FY-8wa" firstAttribute="leading" secondItem="ifb-Lu-tT2" secondAttribute="leading" type="default" id="f8e-qd-UDB"/>
+                            <constraint firstItem="3BA-DT-fPH" firstAttribute="bottom" secondItem="ifb-Lu-tT2" secondAttribute="bottom" type="default" id="fvg-TD-bVl"/>
+                            <constraint firstItem="3BA-DT-fPH" firstAttribute="trailing" secondItem="ifb-Lu-tT2" secondAttribute="trailing" type="default" id="iVP-kz-Zd7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="breakTypeLabel" destination="stS-PB-roN" id="aAr-KG-Lc9"/>
+                        <outlet property="intervalSettings" destination="RXV-JX-xuL" id="aqh-Ac-m1t"/>
+                        <outlet property="mainView" destination="3BA-DT-fPH" id="Rc2-y8-rke"/>
+                        <outlet property="minuteLabel" destination="01Z-Rs-jgL" id="VkA-UE-kMN"/>
+                        <outlet property="pomodoroSettings" destination="LwN-Zo-hWR" id="Chd-JF-KT0"/>
+                        <outlet property="pomodorosCompleteLabel" destination="KAs-Nv-xWf" id="jUQ-VE-dpy"/>
+                        <outlet property="secondLabel" destination="XXx-XH-LV6" id="Xnj-LF-L2q"/>
+                        <outlet property="startButton" destination="XOh-Gb-ePN" id="Jg7-o8-pTa"/>
+                        <outlet property="stopButton" destination="gtU-f7-8Og" id="AFi-d7-lck"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CK3-d1-1dl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="bhQ-wg-caz">
+                    <connections>
+                        <action selector="settingsTapped:" destination="wfL-cP-BWa" id="3lF-AC-1sZ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="IbV-4g-L9b">
+                    <connections>
+                        <action selector="settingsTapped:" destination="wfL-cP-BWa" id="Jr1-6W-OL3"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="481" y="-275"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="clockface.png" width="134" height="99"/>
+        <image name="config.png" width="22" height="22"/>
+        <image name="info_list.png" width="604" height="180"/>
+        <image name="start_btn.png" width="560" height="102"/>
+        <image name="stop_btn.png" width="560" height="102"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="PDViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PDViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="doIntervalSliderValueChanged:"/>
+                <relationship kind="action" name="doPomodoroSliderButtonUp:"/>
+                <relationship kind="action" name="doPomodoroSliderValueChanged:"/>
+                <relationship kind="action" name="doStartPomodoro:"/>
+                <relationship kind="action" name="doStopPomodoro:"/>
+                <relationship kind="action" name="settingsTapped:"/>
+                <relationship kind="outlet" name="breakTypeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="intervalSettings" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mainView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="minuteLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pomodoroSettings" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pomodorosCompleteLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="secondLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="startButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="stopButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
