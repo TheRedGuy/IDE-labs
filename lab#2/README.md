@@ -16,8 +16,8 @@ GUI Programming
 - Operation with decimal floating point.
 - Dividing the program in two modules - the GUI module and Core Module.
 
-Application
------------
+Rubulator
+---------
 
 The program is a single view application.
 
